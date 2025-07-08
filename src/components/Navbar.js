@@ -34,7 +34,7 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <button className="btn btn-primary">Download Resume</button>
+      <button className="btn btn-primary"><a href="/../../public/Punam-Bora-Resume-Latest.pdf" download>Download Resume</a></button>
     </div>
   )
 }

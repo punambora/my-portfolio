@@ -145,6 +145,7 @@
     height: auto;
 
     .left {
+      text-align: center;
       padding: 20px;
       width: 100%;
 

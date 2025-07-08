@@ -21,6 +21,12 @@
   .btn {
     height: 40px;
     align-self: center;
+    
+    a {
+      color: unset;
+      text-decoration: none;
+      font-weight: 500;
+    }
   }
 
   .logo-styles {
