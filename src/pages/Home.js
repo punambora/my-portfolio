@@ -1,8 +1,12 @@
+import Navbar from "../components/Navbar";
+import './css/home.css';
+import NameSection from "./NameSection";
+
 function Home() {
   return (
-    <div>
-      <h1>Hello, I'm Poonam Bora</h1>
-      <p>I'm a Frontend Developer</p>
+    <div className="main-container">
+      <Navbar />
+      <NameSection />
     </div>
   );
 }

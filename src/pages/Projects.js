@@ -1,4 +1,4 @@
-function Home() {
+function Projects() {
   return (
     <div>
       <h1>Hello, I'm Poonam Bora</h1>
@@ -7,4 +7,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Projects;

@@ -1,0 +1,139 @@
+.name-container {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  .left {
+    width: 50%;
+    padding-left: 50px;
+
+    h1 {
+      font-size: 3.75rem;
+      font-weight: 700;
+
+      span {
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(135deg, rgb(37, 99, 235), rgb(59, 130, 246)) text;
+      }
+    }
+
+    .content {
+      .role {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        --tw-text-opacity: 1;
+        color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }     
+      
+      .about {
+        --tw-text-opacity: 1;
+        color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        margin-bottom: 2rem;
+      }
+
+      .button-section {
+        display: flex;
+        gap: 1rem;
+
+        .btn {
+          height: 40px;
+          min-width: 180px;
+        }
+
+        .btn-secondary {
+          background-color: white;
+          border-color: #0d6efd;
+          color: #0d6efd;
+        }
+      }
+    }
+  }
+
+  .right {
+    justify-items: end;
+    padding-right: 55px;
+    width: 50%;
+    position: relative;
+    align-self: start;
+    height: 100%;
+    margin-top: 30px;
+
+    .ball-big {
+      height: 325px;
+      background: linear-gradient(180deg, rgb(135 212 231), rgb(40 87 229));
+      border-radius: 175px;
+      font-weight: 700;
+      width: 325px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: translateY(10px, 0);
+      animation: bounce 2s infinite ease-in-out;
+      position: absolute;
+      top: 50px;
+
+      .logo-div {
+        align-content: center;
+        font-size: 4rem;
+        font-family: math;
+        font-weight: 900;
+        color: #fff;
+      }
+    }
+
+    .ball-medium {
+      height: 80px;
+      background: #4ADE80;
+      width: 80px;
+      border-radius: 40px;
+      justify-self: center;
+      animation: fadePulseIn 2s infinite ease-in-out;
+      position: absolute;
+      bottom: 50px;
+    }
+
+    .ball-small {
+      height: 100px;
+      background: #FACC15;
+      width: 100px;
+      border-radius: 50px;
+      justify-self: right;
+      position: absolute;
+      top: 0px;
+      animation: Fade;
+      animation: fadePulseOut 2s infinite ease-in-out;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadePulseIn {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadePulseOut {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
