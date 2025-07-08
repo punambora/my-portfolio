@@ -30,3 +30,16 @@
       padding: 5px;
   }
 }
+
+@media (max-width: 500px) {
+  .navigation-section {
+    padding: 10px 10px;
+    .navbar {
+      display: none;
+    }
+
+    .logo-div {
+      font-size: 2rem;
+    }
+  }
+}

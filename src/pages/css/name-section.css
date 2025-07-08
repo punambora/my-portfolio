@@ -137,3 +137,42 @@
     opacity: 0.3;
   }
 }
+
+@media (max-width: 500px) {
+  .name-container {
+    flex-direction: column;
+    margin-top: 0px;
+    height: auto;
+
+    .left {
+      padding: 20px;
+      width: 100%;
+
+      .content {
+        .button-section {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .right {
+      height: auto;
+      width: 100%;
+      min-height: 420px;
+
+      .ball-big {
+        right: 20px;
+        height: 250px;
+        width: 250px;
+      }
+
+      .ball-small {
+        right: 20px;
+      }
+
+      .ball-medium {
+        left: 20px;
+      }
+    }
+  }
+}
