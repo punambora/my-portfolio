@@ -119,3 +119,15 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .about-section {
+    .about-details {
+      flex-direction: column;
+
+      .left, .right {
+        width: 100%;
+      }
+    }
+  }
+}
