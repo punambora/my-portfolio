@@ -3,7 +3,7 @@ import './css/name-section.css';
 
 function NameSection() {
   return (
-    <div className="name-container">
+    <section id="name-section" className="name-container">
       <div className="left">
         <h1>Hi, I'm <span>Punam Bora</span></h1>
         <div className="content">
@@ -26,7 +26,7 @@ function NameSection() {
         <div className="ball-medium"></div>
         <div className="ball-small"></div>
       </div>
-    </div>
+    </section>
   );
 }
 

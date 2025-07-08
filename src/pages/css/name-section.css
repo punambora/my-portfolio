@@ -2,7 +2,8 @@
   height: 500px;
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #f6f8fc;
 
   .left {
     width: 50%;
@@ -61,7 +62,7 @@
     position: relative;
     align-self: start;
     height: 100%;
-    margin-top: 30px;
+    padding-top: 30px;
 
     .ball-big {
       height: 325px;
