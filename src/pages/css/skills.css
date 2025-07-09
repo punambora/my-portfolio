@@ -1,0 +1,147 @@
+.skills-section {
+  --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+    padding: 5rem 0px;
+
+    .heading {
+      text-align: center;
+      margin-bottom: 64px;
+
+      .title {
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 16px;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        color: #D1D5DB;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .content {
+      display: flex;
+      max-width: 1400px;
+      gap: 2rem;
+      padding: 0px 1.5rem;
+      width: 100%;
+      margin: auto;
+
+      .card {
+        padding: 1.5rem;
+        width: 25%;
+
+        .progressbar {
+          --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+          width: 100%;
+          height: 0.5rem;
+          background-image: linear-gradient(to right, var(--tw-gradient-stops));
+          border-radius: 9999px;
+          margin-bottom: 24px;
+        }
+
+        .card-title {
+          color: #1f2937;
+          margin-bottom: 24px;
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        .card-content {
+          .skill {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+
+            .name {
+              color: #374151;
+              font-weight: 700;
+            }
+
+            .percentage {
+              font-size: 14px;
+            }
+          }
+
+          .outer-progressbar {
+            width: 100%;
+            height: 0.5rem;
+            background-color: #E5E7EB;
+            border-radius: 9999px;
+            margin: 0.5rem 0;
+
+            .inner-progressbar {
+              --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+              height: 0.5rem;
+              background-image: linear-gradient(to right, var(--tw-gradient-stops));
+              border-radius: 9999px;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+
+      .first-card {
+        .progressbar {
+          --tw-gradient-to: #9333ea;
+          --tw-gradient-from: #3b82f6;
+        }
+
+        .card-content .outer-progressbar .inner-progressbar{
+          --tw-gradient-to: #9333ea;
+          --tw-gradient-from: #3b82f6;
+        }
+      }
+
+      .second-card {
+        .progressbar {
+          --tw-gradient-to: #0D9488;
+          --tw-gradient-from: #22C55E;
+        }
+
+        .card-content .outer-progressbar .inner-progressbar{
+          --tw-gradient-to: #0D9488;
+          --tw-gradient-from: #22C55E;
+        }
+      }
+
+      .third-card {
+        .progressbar {
+          --tw-gradient-to: #DC2626;
+          --tw-gradient-from: #F97316;
+        }
+
+        .card-content .outer-progressbar .inner-progressbar{
+          --tw-gradient-to: #DC2626;
+          --tw-gradient-from: #F97316;
+        }
+      }
+
+      .fourth-card {
+        .progressbar {
+          --tw-gradient-to: #DB2777;
+          --tw-gradient-from: #A855F7;
+        }
+
+        .card-content .outer-progressbar .inner-progressbar{
+          --tw-gradient-to: #DB2777;
+          --tw-gradient-from: #A855F7;
+        }
+      }
+    }
+}
+
+@media (max-width: 500px) {
+  .skills-section {
+    .content {
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+      }
+
+    }
+  }
+}
