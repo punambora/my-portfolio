@@ -1,9 +1,18 @@
+import './css/contact.css';
+
 function Contact() {
   return (
-    <div>
-      <h1>Hello, I'm Poonam Bora</h1>
-      <p>I'm a Frontend Developer</p>
-    </div>
+    <section
+      className="contact-section"
+      id="contact"
+    >
+      <div className="top-section">
+        <div className="heading">Get In Touch</div>
+        <div className="subheading">
+          Let's discuss your next project or explore opportunities to work together
+        </div>
+      </div>
+    </section>
   );
 }
 
