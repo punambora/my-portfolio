@@ -63,10 +63,34 @@
         }
 
         .key-features-title {
-          margin-bottom: 12px;
+          margin-bottom: 4px;
           font-size: 16px;
           color: #1f2937;
           font-weight: 700;
+        }
+
+        .key-features {
+          font-size: 15px;
+
+          ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            margin-bottom: 1.5rem;
+
+            li {
+              display: flex;
+              align-items: center;
+              margin-top: 0.5rem;
+
+              .bullet {
+                background-color: rgb(37 99 235);
+                border: 3px solid #2563EB;
+                border-radius: 9px;
+                margin: 0.25rem 0.75rem 0 0;
+              }
+            }
+          }
         }
 
         .skills {
@@ -80,7 +104,7 @@
 
             li {
               color: rgb(55 65 81);
-              font-size: .875rem;
+              font-size: 12px;
               line-height: 1.25rem;
               font-weight: 600;
               padding: 0.25rem 0.75rem;

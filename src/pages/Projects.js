@@ -82,7 +82,7 @@ function Projects() {
             <div className="key-features-title">Key Features:</div>
             <div className="key-features">
               <ul>
-                {project.features.map((feature, i) => <li key={i}>{feature}</li>)}
+                {project.features.map((feature, i) => <li key={i}><span className='bullet'></span><span>{feature}</span></li>)}
               </ul>
             </div>
             <div className="skills">
@@ -90,7 +90,7 @@ function Projects() {
                 {project.skills.map((feature, i) => <li key={i}>{feature}</li>)}
               </ul>
             </div>
-            <button className="btn btn-primary">View Details</button>
+            <button className="btn btn-primary d-none">View Details</button>
           </div>
         ))}
       </div>
