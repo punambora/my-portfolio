@@ -94,6 +94,9 @@ function Projects() {
           </div>
         ))}
       </div>
+      <div className="github-button-container">
+        <button className="btn btn-secondary"><a href="https://github.com/punambora" target='_blank' rel="noreferrer">View All Projects on GitHub</a></button>
+      </div>
     </section>
   );
 }
