@@ -1,0 +1,187 @@
+.experience-section {
+  padding: 5rem 1.5rem;
+  margin: auto;
+
+  .top-section {
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+    margin-bottom: 4rem;
+
+    .heading {
+      color: #020817;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .subheading {
+      color: #4B5563;
+      font-size: 18px;
+      max-width: 42rem;
+      margin: auto;
+      font-weight: 600;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 56rem;
+
+    .card-container {
+      position: relative;
+
+      .line {
+        position: absolute;
+        top: 16px;
+        width: 2px;
+        height: calc(100% - 16px);
+        background-color: #2563eb;
+        left: calc(1.5rem + 7px);
+      }
+
+      .dot {
+        --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        border-width: 4px;
+        background-color: rgb(37 99 235);
+        border-color: rgb(255 255 255);
+        width: 1rem;
+        height: 1rem;
+        border-radius: 99px;
+        border-style: solid;
+        position: absolute;
+        left: 1.5rem;;
+      }
+
+      .card {
+        margin-left: 5rem;
+        margin-bottom: 3rem;
+        -tw-border-opacity: 1;
+        border-color: rgb(37 99 235 / var(--tw-border-opacity, 1));
+        border-left-width: 4px;
+        --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        padding: 2rem;
+
+        .d-flex {
+          justify-content: space-between;
+          align-items: center;
+
+          .role {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1F2937;
+            margin-bottom: 4px;
+          }
+
+          .organization {
+            color: #2563EB;
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 700;
+          }
+
+          .timeline {
+            color: rgb(37 99 235);
+            font-weight: 500;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            padding: .5rem 1rem;
+            background-color: rgb(219 234 254);
+            height: fit-content;
+            border-radius: 99px;
+            font-weight: 600;
+          }
+        }
+
+        .details {
+          ul {
+            margin-left: 0;
+            padding-left: 0;
+            margin-bottom: 1.5rem;
+
+            li {
+              align-items: flex-start;
+              display: flex;
+              align-items: center;
+              margin-top: 0.5rem;
+
+              .bullet {
+                background-color: rgb(37 99 235);
+                border: 3px solid #2563EB;
+                border-radius: 9px;
+                margin: 0.25rem 0.75rem 0 0;
+              }
+            }
+          }
+        }
+
+        .skills {
+          ul {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+
+            li {
+              color: rgb(55 65 81);
+              font-size: .875rem;
+              line-height: 1.25rem;
+              font-weight: 600;
+              padding: 0.25rem 0.75rem;
+              background-color: rgb(243 244 246);
+              border-radius: 99px;
+
+              &:hover {
+                color: #fff;
+                background-color: rgb(37 99 235);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    :last-child .card {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .experience-section {
+    .content {
+      .card-container {
+        .dot {
+          display: none;
+        }
+
+        .line {
+          display: none;
+        }
+
+        .card {
+          margin-left: 0;
+
+          .d-flex {
+            flex-direction: column;
+
+            .timeline {
+              align-self: flex-start;
+            }
+          }
+
+          .details ul li {
+            align-items: baseline;
+          }
+        }
+      }
+    }
+  }
+}
