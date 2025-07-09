@@ -14,8 +14,8 @@ function NameSection() {
             React | Node.js | AEM Specialist with 4.5+ years of experience in full-stack development, cloud deployments, and building scalable web applications.
           </div>
           <div className='button-section'>
-            <button className='btn btn-primary'>View My Work</button>
-            <button className='btn btn-secondary'>Contact Me</button>
+            <button className='btn btn-primary'><a href="#projects">View My Work</a></button>
+            <button className='btn btn-secondary'><a href="#contact">Contact Me</a></button>
           </div>
         </div>
       </div>
