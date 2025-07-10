@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
 import './css/navbar.css';
 import Modal from 'react-modal';
-import { Worker, Viewer } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const Navbar = () => {
 
@@ -27,29 +24,29 @@ const Navbar = () => {
       }`}>
       <div className="logo-div">{"{PB}"}</div>
       {/* <img className="logo-styles" src={LogoLight} alt="logo" /> */}
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#name-section">Home</a>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#name-section">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#experience">Experience</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -78,13 +75,15 @@ const Navbar = () => {
           <button className='btn btn-primary m-2' onClick={() => setOpen(false)}><a href="/Punam-Bora-Resume-Latest.pdf" download>Download</a></button>
           <button className='btn btn-primary' onClick={() => setOpen(false)}>Close</button>
         </div>
-        <div style={{ padding: '1rem', background: '#fff' }}>
+        <div style={{ padding: '0.5rem', background: '#fff' }}>
           <iframe
             src="/Punam-Bora-Resume-Latest.pdf#toolbar=0&navpanes=0&view=FitH"
             title="Resume Preview"
             width="100%"
             style={{
-              height: '80vh',
+              height: '100vh',
+              width: 'calc(100vw - 50px)',
+              maxWidth: '780px',
               border: '1px solid #ccc',
               borderRadius: '6px',
             }}
