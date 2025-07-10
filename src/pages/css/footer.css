@@ -1,5 +1,72 @@
-.footer-section {
-    background-color: rgb(31 41 55);
+.footer-main {
+  background-color: rgb(31 41 55);
+
+  .footer-section {
     padding: 5rem 0px;
     color: #ffffff;
+    max-width: 1400px;
+    padding: 3rem 1.5rem;
+    margin: auto;
+    
+    .first-section {
+      display: flex;
+      gap: 2rem;
+
+      .column {
+        width: 33.33%;
+      }
+
+      .about-details {
+        .title {
+          color: #2563EB;
+          font-size: 24px;
+          font-weight: 800;
+          margin-bottom: 1rem;
+
+          span {
+            color: #fff;
+          }
+        }
+      }
+
+      .link-section, .connect-section {
+        .title {
+          font-size: 18px;
+          margin-bottom: 16px;
+          font-weight: 700;
+        }
+
+        ul {
+          list-style: none;
+          padding-left: 0px;
+
+          li {
+            margin-top: 0.5rem;
+
+            a {
+              text-decoration: none;
+              color: #fff;
+
+              &:hover {
+                color: #2563EB;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .second-section {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 16px;
+
+      .copyright {
+        font-size: 14px;
+        line-height: 1;
+        color: #D1D5DB;
+        align-content: center;
+      }
+    }
+  }
 }

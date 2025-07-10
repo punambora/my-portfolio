@@ -25,25 +25,26 @@ function Footer() {
   ];
 
   return (
-    <div className="footer-section">
+    <div className="footer-main">
+      <div className="footer-section">
       <div className="first-section">
-        <div className="about-details">
-          <div className='title'>{'<PB />'}</div>
+        <div className="column about-details">
+            <div className='title'>{'{'}<span> PB </span>{'}'}</div>
           <div className='subtitle'>Senior Software Developer specializing in ReactJS, Node.js, and AEM.
           Passionate about building scalable web applications and solving
           complex problems.</div>
         </div>
-        <div className="link-section">
+        <div className="column link-section">
           <div className='title'>Quick Links</div>
           <ul>
-            <li><a className="nav-link" href="#about-section">About</a></li>
-            <li><a className="nav-link" href="#skills-section">Skills</a></li>
-            <li><a className="nav-link" href="#experience-section">Experience</a></li>
-            <li><a className="nav-link" href="#projects-section">Projects</a></li>
-            <li><a className="nav-link" href="#contact-section">Contact</a></li>
+            <li><a className="nav-link" href="#about">About</a></li>
+            <li><a className="nav-link" href="#skills">Skills</a></li>
+            <li><a className="nav-link" href="#experience">Experience</a></li>
+            <li><a className="nav-link" href="#projects">Projects</a></li>
+            <li><a className="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div className="connect-section">
+        <div className="column connect-section">
           <div className='title'>Connect</div>
           <ul>
             {contacts.map((contact, index) =>
@@ -55,7 +56,8 @@ function Footer() {
       <hr />
       <div className="second-section">
         <div className="copyright">© 2025 Punam Bora. All rights reserved.</div>
-        <button>Back to Top</button>
+        <button className='btn btn-primary'><a className="nav-link" href="#name-section">Back to Top</a></button>
+      </div>
       </div>
     </div>
   );

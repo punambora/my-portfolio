@@ -61,8 +61,7 @@ function Contact() {
       alert("Please enter a message.");
       return;
     }
-    console.log('detail: ', { name, email, subject, message });
-    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+
     emailjs
     .send(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -72,7 +71,6 @@ function Contact() {
     )
     .then(
       (result) => {
-        console.log('SUCCESS!', result.text);
         alert('Message sent!');
         setEmail('');
         setMessage('');
