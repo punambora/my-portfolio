@@ -24,4 +24,139 @@
       font-weight: 600;
     }
   }
+
+  .content {
+    display: flex;
+    gap: 3rem;
+    max-width: 72rem;
+    margin: auto;
+
+    .left, .right {
+      width: 50%;
+    }
+
+    .left {
+      --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+      --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      padding: 2rem;
+
+      .form {
+        .title {
+          color: #1f2937;
+          font-size: 24px;
+          margin-bottom: 4px;
+          font-weight: 800;
+        }
+
+        label {
+          color: #374151;
+          font-size: 16px;
+          margin-bottom: 8px;
+          font-weight: 700;
+          margin-top: 1.5rem;
+        }
+
+        input, textarea {
+          width: 100%;
+          padding: 0.5rem 0.75rem;
+          border: 1px solid #e2e8f0;
+          border-radius: 0.5rem;
+        }
+
+        textarea {
+          resize: none;
+          min-height: 80px;
+        }
+
+        button {
+          margin-top: 24px;
+          width: 100%;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+
+      .contact-info-section, .resume-section {
+        --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+        --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        border: 1px solid #e2e8f0;
+        border-radius: 0.5rem;
+        padding: 2rem;
+
+        .title {
+          color: #1f2937;
+          font-size: 24px;
+          margin-bottom: 4px;
+          font-weight: 800;
+        }
+      }
+
+      .contact-info-section {
+        .detail-section {
+          display: flex;
+          margin-top: 1.5rem;
+
+          .initial {
+            background-color: rgb(37 99 235);
+            width: 3rem;
+            height: 3rem;
+            border-radius: 99px;
+            color: #fff;
+            align-content: center;
+            text-align: center;
+            font-weight: 700;
+          }
+
+          .contact-detail-section {
+            margin-left: 1rem;
+            font-size: 16px;
+
+            .contact-type {
+              color: #1F2937;
+              font-weight: 800;
+            }
+
+            .contact-value {
+              font-weight: 600;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .resume-section {
+        background-color: #2563EB;
+        color: #fff;
+
+        .title {
+          color: #fff;
+        }
+
+        .subtitle {
+          margin: 12px 0 24px;
+          font-weight: 500;
+        }
+
+        .btn {
+          background-color: white;
+          border-color: #0d6efd;
+          color: #0d6efd;
+          font-weight: 600;
+          height: 40px;
+          
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
