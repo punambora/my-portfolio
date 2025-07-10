@@ -21,7 +21,13 @@
           color: #2563EB;
           font-size: 24px;
           font-weight: 800;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
+          line-height: 1;
+          align-content: center;
+          font-family: math;
+          font-weight: 900;
+          -webkit-text-fill-color: transparent;
+          background: linear-gradient(180deg, rgb(135 212 231), rgb(40 87 229)) text;
 
           span {
             color: #fff;

@@ -23,7 +23,6 @@ const Navbar = () => {
         scrolled ? 'shadow-md' : ''
       }`}>
       <div className="logo-div">{"{PB}"}</div>
-      {/* <img className="logo-styles" src={LogoLight} alt="logo" /> */}
       <nav className="navbar navbar-expand-lg navbar-light">
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
