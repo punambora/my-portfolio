@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './css/contact.css';
 import emailjs from '@emailjs/browser';
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 function Contact() {
   const contacts = [
@@ -8,21 +9,25 @@ function Contact() {
       type: 'Email',
       value: 'punamdbora@gmail.com',
       href: 'mailto:punamdbora@gmail.com',
+      icon: FaEnvelope
     },
     {
       type: 'Phone',
       value: '+91 9130105255',
       href: 'tel:+919130105255',
+      icon: FaPhone
     },
     {
       type: 'LinkedIn',
       value: 'linkedin.com/in/punambora',
       href: 'https://linkedin.com/in/punambora',
+      icon: FaLinkedin
     },
     {
       type: 'GitHub',
       value: 'github.com/punambora',
       href: 'https://github.com/punambora',
+      icon: FaGithub
     },
   ];
 
@@ -147,7 +152,7 @@ function Contact() {
                 key={index}
                 className={`${contact.type.toLowerCase()}-section detail-section`}
               >
-                <div className="initial">{contact.type.charAt(0)}</div>
+                <div className="initial"><contact.icon></contact.icon></div>
                 <div className="contact-detail-section">
                   <div className="contact-type">{contact.type}</div>
                   <a
