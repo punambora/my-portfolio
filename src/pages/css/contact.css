@@ -160,3 +160,14 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .contact-section .content {
+    flex-direction: column;
+
+    .left, .right .contact-info-section, .right .resume-section {
+      width: 100%;
+      padding: 1.5rem 1rem;
+    }
+  }
+}
